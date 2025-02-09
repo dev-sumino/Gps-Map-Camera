@@ -57,7 +57,8 @@
                   <p class="ls-4 text-uppercase">- User Guide -</p>
                   <h2 class="text-15 fw-600 mb-3">Gps Map Camera | Android</h2>
                   <p class="lead mb-5"><b>GPS Photo Location On Map</b></p>
-                  <img class="img-fluid" src="./image/Appdata_image/Logo/ic_launcher.webp" style="height: 200px" alt="" />
+                  <img class="img-fluid" src="./image/Appdata_image/Logo/ic_launcher.webp" style="height: 200px"
+                    alt="" />
                 </div>
               </div>
             </div>
@@ -113,6 +114,8 @@
               <hr class="mb-0 opacity-1">
               <div class="accordion accordion-flush arrow-end" id="permissionsList">
 
+
+                <!-- INTERNET Permission -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -123,12 +126,13 @@
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to access the internet for downloading updates, sending and
-                      receiving data, and interacting with online services.
+                      <p><code>&lt;uses-permission android:name="android.permission.INTERNET" /&gt;</code></p>
+                      <p>This permission allows the app to access the internet for downloading updates and interacting with online services.</p>
                     </div>
                   </div>
                 </div>
 
+                <!-- ACCESS_NETWORK_STATE Permission -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -139,12 +143,15 @@
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to check the network connectivity status, ensuring that it can
-                      determine if the device is connected to the internet.
+                      <p><code>&lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /&gt;</code>
+                      </p>
+                      <p>This permission allows the app to check the network connectivity status, ensuring that it can
+                        determine if the device is connected to the internet.</p>
                     </div>
                   </div>
                 </div>
 
+                <!-- ACCESS_WIFI_STATE Permission -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -155,12 +162,14 @@
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to gather information about Wi-Fi connections, including whether
-                      the device is connected to Wi-Fi.
+                      <p><code>&lt;uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /&gt;</code></p>
+                      <p>This permission allows the app to gather information about Wi-Fi connections, including whether
+                        the device is connected to Wi-Fi.</p>
                     </div>
                   </div>
                 </div>
 
+                <!-- CAMERA Permission -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -171,11 +180,14 @@
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to access the camera for capturing photos and recording videos.
+                      <p><code>&lt;uses-permission android:name="android.permission.CAMERA" /&gt;</code></p>
+                      <p>This permission allows the app to access the camera for capturing photos and recording videos.
+                      </p>
                     </div>
                   </div>
                 </div>
 
+                <!-- ACCESS_FINE_LOCATION Permission -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -186,12 +198,15 @@
                   <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to access your device's precise location using GPS, essential for
-                      location-based services.
+                      <p><code>&lt;uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /&gt;</code>
+                      </p>
+                      <p>This permission allows the app to access your device's precise location using GPS, which is
+                        essential for location-based services.</p>
                     </div>
                   </div>
                 </div>
 
+                <!-- ACCESS_COARSE_LOCATION Permission -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingSix">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -202,12 +217,15 @@
                   <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to access approximate location data, usually based on cell towers
-                      or Wi-Fi, for location-related services.
+                      <p><code>&lt;uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /&gt;</code>
+                      </p>
+                      <p>This permission allows the app to access approximate location data (based on cell towers or
+                        Wi-Fi) for location-related services.</p>
                     </div>
                   </div>
                 </div>
 
+                <!-- READ_EXTERNAL_STORAGE Permission -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingSeven">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -218,11 +236,16 @@
                   <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to read data from your external storage, such as photos and files.
+                      <p>
+                        <code>&lt;uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" /&gt;</code>
+                      </p>
+                      <p>This permission allows the app to read data from your external storage, such as photos and
+                        files.</p>
                     </div>
                   </div>
                 </div>
 
+                <!-- WRITE_EXTERNAL_STORAGE Permission -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingEight">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -233,13 +256,15 @@
                   <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to write data to your external storage, such as saving images,
-                      files, or other data.
+                      <p>
+                        <code>&lt;uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" /&gt;</code>
+                      </p>
+                      <p>This permission allows the app to write data to your external storage, such as saving images,
+                        files, or other data.</p>
                     </div>
                   </div>
                 </div>
 
-                <!-- Add more accordion items as needed for other permissions -->
                 <!-- READ_MEDIA_IMAGES Permission -->
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingNine">
@@ -251,8 +276,9 @@
                   <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to access images stored on your device, including photos you have
-                      taken or downloaded.
+                      <p><code>&lt;uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /&gt;</code></p>
+                      <p>This permission allows the app to access images stored on your device, including photos you
+                        have taken or downloaded.</p>
                     </div>
                   </div>
                 </div>
@@ -268,8 +294,9 @@
                   <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to access videos stored on your device, such as videos you have
-                      recorded or downloaded.
+                      <p><code>&lt;uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /&gt;</code></p>
+                      <p>This permission allows the app to access videos stored on your device, such as those you have
+                        recorded or downloaded.</p>
                     </div>
                   </div>
                 </div>
@@ -285,8 +312,11 @@
                   <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to access specific media files (images and videos) that you have
-                      selected for use within the app.
+                      <p>
+                        <code>&lt;uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" /&gt;</code>
+                      </p>
+                      <p>This permission allows the app to access specific media files (images and videos) that you have
+                        selected for use within the app.</p>
                     </div>
                   </div>
                 </div>
@@ -302,8 +332,9 @@
                   <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to record audio using your device's microphone, which may be used
-                      for voice commands or audio recording features.
+                      <p><code>&lt;uses-permission android:name="android.permission.RECORD_AUDIO" /&gt;</code></p>
+                      <p>This permission allows the app to record audio using your device's microphone, which may be
+                        used for voice commands or audio recording features.</p>
                     </div>
                   </div>
                 </div>
@@ -319,8 +350,9 @@
                   <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission enables in-app purchases, allowing you to buy additional content or features
-                      within the app.
+                      <p><code>&lt;uses-permission android:name="com.android.vending.BILLING" /&gt;</code></p>
+                      <p>This permission enables in-app purchases, allowing you to buy additional content or features
+                        within the app.</p>
                     </div>
                   </div>
                 </div>
@@ -336,8 +368,10 @@
                   <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to access the Advertising ID on your device, which is used to
-                      provide personalized ads.
+                      <p><code>&lt;uses-permission android:name="com.google.android.gms.permission.AD_ID" /&gt;</code>
+                      </p>
+                      <p>This permission allows the app to access the Advertising ID on your device, which is used to
+                        provide personalized ads.</p>
                     </div>
                   </div>
                 </div>
@@ -353,8 +387,9 @@
                   <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to send notifications to your device, keeping you updated with
-                      important alerts or information.
+                      <p><code>&lt;uses-permission android:name="android.permission.POST_NOTIFICATIONS" /&gt;</code></p>
+                      <p>This permission allows the app to send notifications to your device, keeping you updated with
+                        important alerts or information.</p>
                     </div>
                   </div>
                 </div>
@@ -370,8 +405,9 @@
                   <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to continue running in the foreground even when not actively in
-                      use, essential for certain tasks like music playback.
+                      <p><code>&lt;uses-permission android:name="android.permission.FOREGROUND_SERVICE" /&gt;</code></p>
+                      <p>This permission allows the app to continue running in the foreground even when not actively in
+                        use, which is essential for tasks like media playback.</p>
                     </div>
                   </div>
                 </div>
@@ -387,8 +423,9 @@
                   <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to control your device's vibration settings, typically for
-                      notifications or haptic feedback.
+                      <p><code>&lt;uses-permission android:name="android.permission.VIBRATE" /&gt;</code></p>
+                      <p>This permission allows the app to control your device's vibration settings for notifications or
+                        haptic feedback.</p>
                     </div>
                   </div>
                 </div>
@@ -404,8 +441,10 @@
                   <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to display system-level alerts or overlays, which can be useful for
-                      showing information above other apps.
+                      <p><code>&lt;uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /&gt;</code>
+                      </p>
+                      <p>This permission allows the app to display system-level alerts or overlays, which can be useful
+                        for showing information above other apps.</p>
                     </div>
                   </div>
                 </div>
@@ -421,11 +460,50 @@
                   <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen"
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
-                      This permission allows the app to expand the device's status bar programmatically, useful for
-                      certain system interactions or gestures.
+                      <p><code>&lt;uses-permission android:name="android.permission.EXPAND_STATUS_BAR" /&gt;</code></p>
+                      <p>This permission allows the app to expand the device's status bar programmatically, useful for
+                        certain system interactions or gestures.</p>
                     </div>
                   </div>
                 </div>
+
+                <!-- Accelerometer Feature -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwenty">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                      Accelerometer Feature
+                    </button>
+                  </h2>
+                  <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty"
+                    data-bs-parent="#permissionsList">
+                    <div class="accordion-body">
+                      <p><code>&lt;uses-feature android:name="android.hardware.sensor.accelerometer" /&gt;</code></p>
+                      <p>This feature allows the app to utilize the device's accelerometer sensor for detecting motion
+                        and orientation changes.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Compass Feature -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwentyOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
+                      Compass Feature
+                    </button>
+                  </h2>
+                  <div id="collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="headingTwentyOne"
+                    data-bs-parent="#permissionsList">
+                    <div class="accordion-body">
+                      <p><code>&lt;uses-feature android:name="android.hardware.sensor.compass" /&gt;</code></p>
+                      <p>This feature allows the app to access the device's compass sensor, which provides directional
+                        information for navigation or orientation-based functionalities.</p>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
               <hr class="mt-0 opacity-1">
             </div>
@@ -613,7 +691,7 @@
                   </div>
                 </div>
 
-          
+
 
                 <!-- gson Dependency -->
                 <div class="accordion-item">
@@ -1031,7 +1109,7 @@
                   </div>
                 </div>
 
-              
+
 
                 <!-- Logging Interceptor -->
                 <div class="accordion-item">
@@ -1051,8 +1129,8 @@
                 </div>
 
 
-                & more 
-             
+                & more
+
               </div>
               <hr class="mt-0 opacity-1">
             </div>
@@ -1061,7 +1139,7 @@
       </section>
 
 
-      
+
 
 
 
@@ -1104,7 +1182,7 @@
                   <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">What is
-                       GPS Map Camera?</button>
+                      GPS Map Camera?</button>
                   </h2>
                   <div id="flush-collapseOne" class="accordion-collapse collapse show"
                     aria-labelledby="flush-headingOne" data-bs-parent="#faqTopics">
@@ -1116,12 +1194,12 @@
                   <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">How do
-                      I use  GPS Map Camera?</button>
+                      I use GPS Map Camera?</button>
                   </h2>
                   <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                     data-bs-parent="#faqTopics">
                     <div class="accordion-body">
-                      <p class="mb-0">To use the app, open  GPS Map Camera, grant location permissions, frame
+                      <p class="mb-0">To use the app, open GPS Map Camera, grant location permissions, frame
                         your shot, and take a photo. The app will automatically add GPS data and a map snippet to the
                         photo, which you can then save or share.</p>
                     </div>
@@ -1237,7 +1315,7 @@
                   <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
                     data-bs-parent="#faqTopics">
                     <div class="accordion-body">
-                      <p class="mb-0">Currently,  GPS Map Camera is available for Android. Please check
+                      <p class="mb-0">Currently, GPS Map Camera is available for Android. Please check
                         the respective app stores for availability and compatibility.</p>
                     </div>
                   </div>
