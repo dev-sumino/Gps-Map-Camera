@@ -127,7 +127,8 @@
                     data-bs-parent="#permissionsList">
                     <div class="accordion-body">
                       <p><code>&lt;uses-permission android:name="android.permission.INTERNET" /&gt;</code></p>
-                      <p>This permission allows the app to access the internet for downloading updates and interacting with online services.</p>
+                      <p>This permission allows the app to access the internet for downloading updates and interacting
+                        with online services.</p>
                     </div>
                   </div>
                 </div>
@@ -430,24 +431,7 @@
                   </div>
                 </div>
 
-                <!-- SYSTEM_ALERT_WINDOW Permission -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingEighteen">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
-                      SYSTEM_ALERT_WINDOW Permission
-                    </button>
-                  </h2>
-                  <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen"
-                    data-bs-parent="#permissionsList">
-                    <div class="accordion-body">
-                      <p><code>&lt;uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /&gt;</code>
-                      </p>
-                      <p>This permission allows the app to display system-level alerts or overlays, which can be useful
-                        for showing information above other apps.</p>
-                    </div>
-                  </div>
-                </div>
+
 
                 <!-- EXPAND_STATUS_BAR Permission -->
                 <div class="accordion-item">
@@ -1190,6 +1174,7 @@
                       location data and map overlays, providing precise location context for your images.</div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1205,6 +1190,8 @@
                     </div>
                   </div>
                 </div>
+
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1220,6 +1207,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1234,6 +1222,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1249,6 +1238,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingSix">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1263,6 +1253,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingSeven">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1273,10 +1264,48 @@
                     data-bs-parent="#faqTopics">
                     <div class="accordion-body">
                       <p class="mb-0">Gps Camera supports common photo formats including JPEG and PNG. GPS and map data
-                        are embedded in the image metadata.</p>
+                        are embedded in the image Properties .</p>
                     </div>
                   </div>
                 </div>
+
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingExif">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseExif" aria-expanded="false" aria-controls="flush-collapseExif">
+                      What is EXIF metadata (images Properties) and why is it added to images?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseExif" class="accordion-collapse collapse" aria-labelledby="flush-headingExif"
+                    data-bs-parent="#faqTopics">
+                    <div class="accordion-body">
+                      <p>EXIF (Exchangeable Image File Format) metadata is Unique information stored in an image file.
+                        It contains details such as <strong>location (GPS coordinates), author, copyright, date & time,
+                          camera settings</strong>, and more.</p>
+
+                      <p>When you capture an image using Gps Camera, EXIF metadata is automatically
+                        added.
+                        However, our app allows you to manually add or modify or turn off specific EXIF details like:</p>
+
+                      <ul>
+                        <li><strong>Location (GPS Data)</strong> – Stores latitude and longitude of where the image was
+                          taken.</li>
+                        <li><strong>Author</strong> – Identifies the creator of the image.</li>
+                        <li><strong>Copyright</strong> – Protects image rights.</li>
+                        <li><strong>Date & Time</strong> – Records when the image was captured or last modified.</li>
+                      </ul>
+
+                      <p>This metadata is useful for organizing, verifying authenticity, and protecting your images from
+                        unauthorized usage.</p>
+
+                      <p><strong>Note:</strong> Some social media platforms and messaging apps remove EXIF data when
+                        sharing images.</p>
+                    </div>
+                  </div>
+                </div>
+
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingEight">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1287,11 +1316,12 @@
                     data-bs-parent="#faqTopics">
                     <div class="accordion-body">
                       <p class="mb-0">No, your location data is only embedded in your photos and not shared with others
-                        unless you choose to share the photos. The app does not access or share personal information.
+                        unless you choose to share the photos. The app does not share personal information.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingNine">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1306,6 +1336,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="flush-headingTen">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1320,6 +1351,10 @@
                     </div>
                   </div>
                 </div>
+
+
+
+
               </div>
               <hr class="mt-0 opacity-1">
             </div>
